@@ -1,7 +1,8 @@
-export const Note = ({note}) => (
+export const Note = ({...note}) => (
   <div >
     <li>
-      {note.important ? <strong>{note.content}</strong> : note.content}
-    </li>
+      <p>{note.title}</p>
+      <p><small>{note.body}</small></p>
+    </li> 
   </div>
 )
